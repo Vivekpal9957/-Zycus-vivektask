@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-6702",
+  "account_confidence": 0.95,
+  "category": "Onboarding",
+  "priority": "P3",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": true,
+  "duplicate_of": "TKT-10163",
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "authentication-sso#3"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. This looks related to your open ticket TKT-10163; we have linked them. Based on our documentation: ## New Users Cannot Authenticate via SSO\n\n**Symptom:** Existing users log in fine; new joiners get an error.\n\n**Most common cause:** The new user's IDP group has not been mapped to a product role.\n\n**Resolution:**\n1. Log in to the product a We'll follow up with next steps.",
+  "internal_note": "Weyland Corp (ACC-6702, Business, Healthy); renewal in 83d; seats 86% active. Duplicate of TKT-10163. KB used: authentication-sso#3. ",
+  "ticket_id": "TKT-10042",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Weyland Corp",
+        "account_id": "ACC-8172"
+      },
+      "observation": "ACC-6702 Weyland Corp (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-6702.",
+      "args": {
+        "account_id": "ACC-6702"
+      },
+      "observation": "Weyland Corp [Business] Healthy/Increasing, renews in 83d, seats 86%, 0 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-6702",
+        "query": "SSO configuration not working for new users \u2014 WorkflowEngine We set up SSO for WorkflowEngine last month and it works for existing users, but new joiners can't authenticate.\n\nError they see: INVALID_CONFIGURATIO",
+        "exclude_ticket_id": "TKT-10042"
+      },
+      "observation": "TKT-10163(Pending Customer) SSO configuration not working for new users \u2014 Work; TKT-10490(Closed) SSO configuration not working for new users \u2014 Clou; TKT-10220(Closed) Integration issue: AnalyticsHub + Google Workspace"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "SSO configuration not working for new users \u2014 WorkflowEngine We set up SSO for WorkflowEngine last month and it works for existing users, but new joiners can't authenticate.\n\nError they see: INVALID_CONFIGURATION: missing required field 'endpoint'\n\nOur IDP: Azu"
+      },
+      "observation": "authentication-sso#3  - New Users Cannot Authenticate via SSO; performance-and-integrations#6 mance Issues - Common Integration Errors; onboarding-guide#0  - New Organisation Onboarding Checklist; billing-and-plans#1 Reference Guide - How Seat Billing Works"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading authentication-sso#3 in full.",
+      "args": {
+        "article_id": "authentication-sso#3"
+      },
+      "observation": "authentication-sso#3 Troubleshooting: Authentication & SSO - New Users Cannot Authenticate via SSO"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

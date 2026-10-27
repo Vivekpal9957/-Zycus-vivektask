@@ -1,5 +1,5 @@
-"""Required output format + validator (reconstruction of the starter kit schema)."""
-CATEGORIES = ["billing","technical_issue","integration","access_sso","feature_request","how_to","security","data_quality","performance","renewal_risk","other"]
+"""Output format + validator. The starter kit shipped no schema.py, so this is our own contract (categories match the dataset's ticket categories)."""
+CATEGORIES = ["Bug","Feature Request","How-To","Performance","Billing","Integration","Onboarding","Data Loss","Other"]
 PRIORITIES = ["P1","P2","P3","P4"]
 ROUTES = ["L1_support","L2_support","engineering","billing_ops","security_team","customer_success","product_management"]
 

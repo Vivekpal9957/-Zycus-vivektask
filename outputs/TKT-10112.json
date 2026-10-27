@@ -1,0 +1,40 @@
+{
+  "account_id": null,
+  "account_confidence": 0.0,
+  "category": "Other",
+  "priority": "P3",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": true,
+  "clarification_questions": [
+    "Which company/account are you contacting us about?",
+    "What exactly is not working, and when did it start?"
+  ],
+  "kb_articles": [],
+  "customer_reply": "Hello, thanks for reaching out. We couldn't match your message to an account and need a few details: your company name, what exactly isn't working, and when it started.",
+  "internal_note": "Account could not be resolved unambiguously from the ticket; asked for company and symptom details.",
+  "ticket_id": "TKT-10112",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Pinnacle Systems",
+        "account_id": "ACC-1785"
+      },
+      "observation": "ACC-1785 Cyberdyne Systems (0.99); ACC-2944 Pinnacle Systems (0.95); ACC-2094 Orion Systems (0.62) | AMBIGUOUS: top candidates are close; do not guess."
+    },
+    {
+      "step": 2,
+      "tool": "submit_triage",
+      "thought": "Cannot identify the account; asking for clarification.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

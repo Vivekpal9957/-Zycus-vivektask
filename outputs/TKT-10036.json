@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-5748",
+  "account_confidence": 0.95,
+  "category": "Feature Request",
+  "priority": "P2",
+  "routing": "L2_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "performance-and-integrations#3"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Based on our documentation: ## AnalyticsHub: Dashboard Timeout\n\n**Symptom:** Dashboard fails to load; spinner runs indefinitely or \"Query timed out\" appears.\n\n**Resolution:**\n1. Edit the slowest widget and open the Query Profiler.\n2. Look for full-table scans (no `WHE We'll follow up with next steps.",
+  "internal_note": "Nexus Data (ACC-5748, Starter, New); renewal in 284d; seats 51% active. KB used: performance-and-integrations#3. ",
+  "ticket_id": "TKT-10036",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Nexus Data",
+        "account_id": "ACC-1982"
+      },
+      "observation": "ACC-5748 Nexus Data (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-5748.",
+      "args": {
+        "account_id": "ACC-5748"
+      },
+      "observation": "Nexus Data [Starter] New/Increasing, renews in 284d, seats 51%, 0 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-5748",
+        "query": "Dashboard loading times unacceptable \u2014 AnalyticsHub Our Data Sources dashboard in AnalyticsHub is now taking over 100 seconds to load. This was not an issue 2 weeks ago. We have a board presentation on ",
+        "exclude_ticket_id": "TKT-10036"
+      },
+      "observation": "TKT-10494(Resolved) Dashboard loading times unacceptable \u2014 AnalyticsHu; TKT-10125(Resolved) Data not syncing between AnalyticsHub and AWS S3; TKT-10288(Resolved) Unable to connect DataBridge Pro to Data Ingestion"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "Dashboard loading times unacceptable \u2014 AnalyticsHub Our Data Sources dashboard in AnalyticsHub is now taking over 100 seconds to load. This was not an issue 2 weeks ago. We have a board presentation on Wednesday and need this resolved.\n\nCustomer ID: AC"
+      },
+      "observation": "performance-and-integrations#3 Issues - AnalyticsHub: Dashboard Timeout; analyticshub#1 csHub \u2014 Product Reference - Core Modules; analyticshub#2 uct Reference - Common Support Scenarios; analyticshub#0 lyticsHub \u2014 Product Reference - Overview"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading performance-and-integrations#3 in full.",
+      "args": {
+        "article_id": "performance-and-integrations#3"
+      },
+      "observation": "performance-and-integrations#3 Troubleshooting: Performance Issues - AnalyticsHub: Dashboard Timeout"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-2462",
+  "account_confidence": 0.95,
+  "category": "Feature Request",
+  "priority": "P4",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": true,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "performance-and-integrations#6"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Based on our documentation: ## Common Integration Errors\n\n| Error | Integration | Cause | Fix |\n|-------|------------|-------|-----|\n| `403 Forbidden` | Salesforce | OAuth token lacks `api` scope | Regenerate token with correct scopes |\n| `404 Not Found` on valid endp We'll follow up with next steps.",
+  "internal_note": "Oceanic Holdings (ACC-2462, Starter, At Risk); renewal in 95d; seats 95% active. KB used: performance-and-integrations#6. ",
+  "ticket_id": "TKT-10017",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Oceanic Holdings",
+        "account_id": "ACC-1659"
+      },
+      "observation": "ACC-2462 Oceanic Holdings (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-2462.",
+      "args": {
+        "account_id": "ACC-2462"
+      },
+      "observation": "Oceanic Holdings [Starter] At Risk/Stable, renews in 95d, seats 95%, 2 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-2462",
+        "query": "Integration issue: SecureVault + Salesforce Hi,\n\nWe're trying to integrate SecureVault with Salesforce using your documented API approach but hitting authentication errors.\n\nError: SCHEMA_MISMAT",
+        "exclude_ticket_id": "TKT-10017"
+      },
+      "observation": "TKT-10384(Resolved) Unable to connect WorkflowEngine to Error Handling; TKT-10207(Closed) SecureVault running extremely slowly for our team; TKT-10351(Open) Data not syncing between SecureVault and HubSpot"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "Integration issue: SecureVault + Salesforce Hi,\n\nWe're trying to integrate SecureVault with Salesforce using your documented API approach but hitting authentication errors.\n\nError: SCHEMA_MISMATCH: expected string, got null\n\nWe've followed the "
+      },
+      "observation": "performance-and-integrations#6 mance Issues - Common Integration Errors; databridge-pro#2 uct Reference - Common Support Scenarios; securevault#1 Vault \u2014 Product Reference - Core Modules; authentication-sso#1 : Authentication & SSO - Error Reference"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading performance-and-integrations#6 in full.",
+      "args": {
+        "article_id": "performance-and-integrations#6"
+      },
+      "observation": "performance-and-integrations#6 Troubleshooting: Performance Issues - Common Integration Errors"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

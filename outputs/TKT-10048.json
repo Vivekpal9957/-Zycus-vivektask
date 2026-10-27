@@ -1,0 +1,75 @@
+{
+  "account_id": "ACC-1275",
+  "account_confidence": 0.95,
+  "category": "Onboarding",
+  "priority": "P4",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [],
+  "customer_reply": "Hello,\n\nThanks for contacting us. We'll follow up with next steps.",
+  "internal_note": "Tyrell Corp (ACC-1275, Enterprise, New); renewal in 258d; seats 61% active. ",
+  "ticket_id": "TKT-10048",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Tyrell Corp",
+        "account_id": "ACC-9444"
+      },
+      "observation": "ACC-1275 Tyrell Corp (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-1275.",
+      "args": {
+        "account_id": "ACC-1275"
+      },
+      "observation": "Tyrell Corp [Enterprise] New/Increasing, renews in 258d, seats 61%, 0 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-1275",
+        "query": "How do I configure Key Management in SecureVault? Hi,\n\nI'm trying to set up Key Management for our team but can't find clear documentation. Specifically, I need to know:\n\n1. How to assign to team\n2. W",
+        "exclude_ticket_id": "TKT-10048"
+      },
+      "observation": "TKT-10235(In Progress) SSO configuration not working for new users \u2014 Clou; TKT-10115(Resolved) SecureVault running extremely slowly for our team; TKT-10297(Open) New team member onboarding to DataBridge Pro"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "How do I configure Key Management in SecureVault? Hi,\n\nI'm trying to set up Key Management for our team but can't find clear documentation. Specifically, I need to know:\n\n1. How to assign to team\n2. What permissions are required\n3. Whether this integ"
+      },
+      "observation": "securevault#1 Vault \u2014 Product Reference - Core Modules; onboarding-guide#0  - New Organisation Onboarding Checklist; securevault#0 cureVault \u2014 Product Reference - Overview; securevault#2 uct Reference - Common Support Scenarios"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading securevault#1 in full.",
+      "args": {
+        "article_id": "securevault#1"
+      },
+      "observation": "securevault#1 SecureVault \u2014 Product Reference - Core Modules"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

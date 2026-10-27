@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-5396",
+  "account_confidence": 0.95,
+  "category": "Data Loss",
+  "priority": "P2",
+  "routing": "L2_support",
+  "escalate": true,
+  "escalation_reason": "P1 / data loss per priority policy",
+  "notify_tam": true,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "authentication-sso#3"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Based on our documentation: ## New Users Cannot Authenticate via SSO\n\n**Symptom:** Existing users log in fine; new joiners get an error.\n\n**Most common cause:** The new user's IDP group has not been mapped to a product role.\n\n**Resolution:**\n1. Log in to the product a We'll follow up with next steps.",
+  "internal_note": "Cybertronics Ltd (ACC-5396, Business, At Risk); renewal in 100d; seats 92% active. KB used: authentication-sso#3. ",
+  "ticket_id": "TKT-10005",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Cybertronics Ltd",
+        "account_id": "ACC-1964"
+      },
+      "observation": "ACC-5396 Cybertronics Ltd (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-5396.",
+      "args": {
+        "account_id": "ACC-5396"
+      },
+      "observation": "Cybertronics Ltd [Business] At Risk/Stable, renews in 100d, seats 92%, 3 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-5396",
+        "query": "SSO configuration not working for new users \u2014 AnalyticsHub We set up SSO for AnalyticsHub last month and it works for existing users, but new joiners can't authenticate.\n\nError they see: ERR_CONNECTION_TIMEOUT",
+        "exclude_ticket_id": "TKT-10005"
+      },
+      "observation": "TKT-10313(Resolved) Integration issue: CloudSync + Azure AD; TKT-10009(Resolved) How do I configure Data Sources in AnalyticsHub?; TKT-10447(Open) Unable to connect WorkflowEngine to Templates"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "SSO configuration not working for new users \u2014 AnalyticsHub We set up SSO for AnalyticsHub last month and it works for existing users, but new joiners can't authenticate.\n\nError they see: ERR_CONNECTION_TIMEOUT after 30s\n\nOur IDP: HubSpot\nPlan: Starter\n\nPlease"
+      },
+      "observation": "authentication-sso#3  - New Users Cannot Authenticate via SSO; onboarding-guide#0  - New Organisation Onboarding Checklist; billing-and-plans#1 Reference Guide - How Seat Billing Works; performance-and-integrations#1 ng: Performance Issues - Error Reference"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading authentication-sso#3 in full.",
+      "args": {
+        "article_id": "authentication-sso#3"
+      },
+      "observation": "authentication-sso#3 Troubleshooting: Authentication & SSO - New Users Cannot Authenticate via SSO"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-4516",
+  "account_confidence": 0.95,
+  "category": "Integration",
+  "priority": "P2",
+  "routing": "L2_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": true,
+  "duplicate_of": "TKT-10228",
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "analyticshub#2"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. This looks related to your open ticket TKT-10228; we have linked them. Based on our documentation: ## Common Support Scenarios\n\n### Dashboard loads slowly or times out\n\n1. Open the Query Profiler: Dashboard \u2192 [widget] \u2192 Edit \u2192 Profiler.\n2. Look for full-table scans or missing indexes on the source database.\n3. Add date range filters to l We'll follow up with next steps.",
+  "internal_note": "Belbury Group (ACC-4516, Business, Healthy); renewal in 89d; seats 63% active. Duplicate of TKT-10228. KB used: analyticshub#2. ",
+  "ticket_id": "TKT-10035",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Belbury Group",
+        "account_id": "ACC-7240"
+      },
+      "observation": "ACC-4516 Belbury Group (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-4516.",
+      "args": {
+        "account_id": "ACC-4516"
+      },
+      "observation": "Belbury Group [Business] Healthy/Declining, renews in 89d, seats 63%, 0 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-4516",
+        "query": "SecureVault running extremely slowly for our team Hi Support,\n\nWe've noticed significant performance degradation in SecureVault over the past 2 days. Page loads are taking 116+ seconds and Key Managem",
+        "exclude_ticket_id": "TKT-10035"
+      },
+      "observation": "TKT-10228(In Progress) SecureVault running extremely slowly for our team; TKT-10252(Open) URGENT: Missing data in SecureVault Key Management; TKT-10016(Closed) Feature request: export Key Management data to Jir"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "SecureVault running extremely slowly for our team Hi Support,\n\nWe've noticed significant performance degradation in SecureVault over the past 2 days. Page loads are taking 116+ seconds and Key Management operations are timing out.\n\nAffected users: 36"
+      },
+      "observation": "analyticshub#2 uct Reference - Common Support Scenarios; securevault#2 uct Reference - Common Support Scenarios; securevault#0 cureVault \u2014 Product Reference - Overview; securevault#1 Vault \u2014 Product Reference - Core Modules"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading analyticshub#2 in full.",
+      "args": {
+        "article_id": "analyticshub#2"
+      },
+      "observation": "analyticshub#2 AnalyticsHub \u2014 Product Reference - Common Support Scenarios"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

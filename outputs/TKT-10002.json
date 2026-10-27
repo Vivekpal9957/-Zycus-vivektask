@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-7397",
+  "account_confidence": 0.95,
+  "category": "Billing",
+  "priority": "P2",
+  "routing": "L2_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": true,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "workflowengine#2"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Based on our documentation: ## Common Support Scenarios\n\n### Scheduled workflow not running\n\n1. Confirm the workflow is **enabled** (green status indicator).\n2. Validate the cron expression using Workflows \u2192 [workflow] \u2192 Schedule \u2192 Validate.\n3. Check if the workflow w We'll follow up with next steps.",
+  "internal_note": "Gavin Belson Co (ACC-7397, Starter, At Risk); renewal in 68d; seats 91% active. KB used: workflowengine#2. ",
+  "ticket_id": "TKT-10002",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Gavin Belson Co",
+        "account_id": "ACC-7572"
+      },
+      "observation": "ACC-7397 Gavin Belson Co (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-7397.",
+      "args": {
+        "account_id": "ACC-7397"
+      },
+      "observation": "Gavin Belson Co [Starter] At Risk/Stable, renews in 68d, seats 91%, 2 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-7397",
+        "query": "Webhook from CloudSync not reaching Snowflake Our CloudSync webhooks are not being delivered to Snowflake. We've verified the endpoint is reachable and the secret is correctly configured.\n\nLast su",
+        "exclude_ticket_id": "TKT-10002"
+      },
+      "observation": "TKT-10444(Resolved) Upgrade request: moving from Enterprise to Enterpr; TKT-10299(Closed) SSO configuration not working for new users \u2014 Anal; TKT-10293(Closed) DataBridge Pro running extremely slowly for our te"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "Webhook from CloudSync not reaching Snowflake Our CloudSync webhooks are not being delivered to Snowflake. We've verified the endpoint is reachable and the secret is correctly configured.\n\nLast successful delivery: last week\nFailed deliveries sin"
+      },
+      "observation": "workflowengine#2 uct Reference - Common Support Scenarios; performance-and-integrations#6 mance Issues - Common Integration Errors; workflowengine#1 ngine \u2014 Product Reference - Core Modules; performance-and-integrations#9 s - Snowflake Integration: Common Issues"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading workflowengine#2 in full.",
+      "args": {
+        "article_id": "workflowengine#2"
+      },
+      "observation": "workflowengine#2 WorkflowEngine \u2014 Product Reference - Common Support Scenarios"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

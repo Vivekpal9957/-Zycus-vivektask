@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-6254",
+  "account_confidence": 0.95,
+  "category": "Performance",
+  "priority": "P3",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": true,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "analyticshub#2"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Based on our documentation: ## Common Support Scenarios\n\n### Dashboard loads slowly or times out\n\n1. Open the Query Profiler: Dashboard \u2192 [widget] \u2192 Edit \u2192 Profiler.\n2. Look for full-table scans or missing indexes on the source database.\n3. Add date range filters to l We'll follow up with next steps.",
+  "internal_note": "Los Pollos Tech (ACC-6254, Starter, Churning); renewal in 112d; seats 52% active. KB used: analyticshub#2. ",
+  "ticket_id": "TKT-10078",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "args": {
+        "company": "Los Pollos Tech",
+        "account_id": "ACC-6706"
+      },
+      "observation": "ACC-6254 Los Pollos Tech (0.95)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and churn signals for ACC-6254.",
+      "args": {
+        "account_id": "ACC-6254"
+      },
+      "observation": "Los Pollos Tech [Starter] Churning/Inactive, renews in 112d, seats 52%, 3 escalation notes"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-6254",
+        "query": "DataBridge Pro running extremely slowly for our team Hi Support,\n\nWe've noticed significant performance degradation in DataBridge Pro over the past 1 days. Page loads are taking 118+ seconds and Connecto",
+        "exclude_ticket_id": "TKT-10078"
+      },
+      "observation": "TKT-10487(Resolved) Dashboard loading times unacceptable \u2014 CloudSync; TKT-10196(In Progress) URGENT: Missing data in DataBridge Pro Schema Mana; TKT-10350(Pending Customer) New team member onboarding to AnalyticsHub"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base.",
+      "args": {
+        "query": "DataBridge Pro running extremely slowly for our team Hi Support,\n\nWe've noticed significant performance degradation in DataBridge Pro over the past 1 days. Page loads are taking 118+ seconds and Connectors operations are timing out.\n\nAffected users: 214"
+      },
+      "observation": "analyticshub#2 uct Reference - Common Support Scenarios; performance-and-integrations#4 dge Pro: Pipeline Throughput Degradation; performance-and-integrations#2 nce Issues - Diagnosing Slow Performance; databridge-pro#1 e Pro \u2014 Product Reference - Core Modules"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading analyticshub#2 in full.",
+      "args": {
+        "article_id": "analyticshub#2"
+      },
+      "observation": "analyticshub#2 AnalyticsHub \u2014 Product Reference - Common Support Scenarios"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "Enough evidence; submitting.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}
