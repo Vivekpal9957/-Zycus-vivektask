@@ -6,6 +6,7 @@ load_dotenv()
 
 PROVIDERS = {
  "xai":    ("https://api.x.ai/v1", "XAI_API_KEY", "XAI_MODEL", "grok-3-mini"),
+ "groq":   ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "llama-3.3-70b-versatile"),
  "openai": ("https://api.openai.com/v1", "OPENAI_API_KEY", "OPENAI_MODEL", "gpt-4o-mini"),
  "ollama": ("http://localhost:11434/v1", None, "OLLAMA_MODEL", "llama3.1"),
 }
