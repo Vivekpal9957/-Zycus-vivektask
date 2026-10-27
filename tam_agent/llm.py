@@ -1,6 +1,6 @@
 """LLM client. xAI Grok / OpenAI / Ollama via OpenAI-compatible chat completions with tool calling.
 `mock` is an offline heuristic policy (no key) that still decides tool calls from observations."""
-import os, json, requests
+import os, re, time, json, requests
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -26,8 +26,12 @@ class LLM:
         if self.provider == "mock":
             from .mock_llm import step
             return step(messages)
-        r = requests.post(f"{self.base}/chat/completions", headers={"Authorization": f"Bearer {self.key}"},
-            json=dict(model=self.model, messages=messages, tools=tools, tool_choice="auto", temperature=0.1), timeout=120)
+        for _ in range(8):  # free-tier TPM limits: wait out 429s
+            r = requests.post(f"{self.base}/chat/completions", headers={"Authorization": f"Bearer {self.key}"},
+                json=dict(model=self.model, messages=messages, tools=tools, tool_choice="auto", temperature=0.1), timeout=120)
+            if r.status_code != 429: break
+            w = re.search(r"try again in ([\d.]+)s", r.text)
+            time.sleep(float(w.group(1)) + 1 if w else 10)
         if r.status_code >= 400: raise RuntimeError(f"{self.provider} {r.status_code}: {r.text[:300]}")
         m = r.json()["choices"][0]["message"]
         calls = [dict(id=c["id"], name=c["function"]["name"], args=json.loads(c["function"]["arguments"] or "{}")) for c in m.get("tool_calls") or []]
