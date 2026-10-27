@@ -22,7 +22,7 @@ class H(BaseHTTPRequestHandler):
         if p == "/":
             b = (ROOT / "ui" / "index.html").read_bytes(); self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(b))); self.end_headers(); self.wfile.write(b)
         elif p == "/api/meta":
-            self._json(dict(default=os.getenv("LLM_PROVIDER", "mock"), grok=bool(os.getenv("XAI_API_KEY")), model=os.getenv("XAI_MODEL", "grok-3-mini"),
+            self._json(dict(default=os.getenv("LLM_PROVIDER", "mock"), model=os.getenv("GROQ_MODEL", ""),
                             counts=dict(tickets=len(TICKETS), accounts=len(tools.S().accounts), kb=len(tools.S().kb))))
         elif p == "/api/tickets":
             s = (q.get("q", [""])[0]).lower(); which = q.get("set", ["review"])[0]
