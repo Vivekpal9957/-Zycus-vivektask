@@ -1,0 +1,67 @@
+{
+  "account_id": "ACC-0007",
+  "account_confidence": 1.0,
+  "category": "access_sso",
+  "priority": "P2",
+  "routing": "L2_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "KB-S01"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Here is how to resolve this: In Okta download the new signing certificate, upload it in Security > SSO > Certificates, enable 'Dual certificate' for 24h, then remove the old one. Login loops after rotation are caused by an expired cert in the SP config. If this doesn't fix it, reply with the exact error message or a screenshot and we'll take it to our L2 team.",
+  "internal_note": "Stark Energy Group (ACC-0007, Enterprise); renewal in 260d; active users +0.4% 3m vs prior 3m; open escalations: 0. Account resolved with confidence 1.00. Category=access_sso, priority=P2. KB used: KB-S01. Outdated article skipped in favour of its replacement. ",
+  "ticket_id": "TCK-9005",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and escalations for ACC-0007.",
+      "args": {
+        "account_id": "ACC-0007"
+      },
+      "observation": "Stark Energy Group [Enterprise] renews in 260d; users +0.4% (3m), 0 open escalations"
+    },
+    {
+      "step": 2,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-0007",
+        "query": "Login loop after rotating Okta SAML certificate We rotated our Okta signing certificate and now users loop back to the login page. We followed the old doc under Settings > Single Sign-On but that me",
+        "exclude_ticket_id": "TCK-9005"
+      },
+      "observation": "TCK-2581(closed) SSO SAML configuration problem \u2013 EMEA; TCK-3503(closed) SSO SAML configuration problem \u2013 North America; TCK-3169(resolved) E-sourcing RFQ problem \u2013 Okta"
+    },
+    {
+      "step": 3,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base for a resolution.",
+      "args": {
+        "query": "Login loop after rotating Okta SAML certificate We rotated our Okta signing certificate and now users loop back to the login page. We followed the old doc under Settings > Single Sign-On but that menu doesn't exist. What are the right steps?"
+      },
+      "observation": "KB-S01 SAML certificate rotation for Okta (v8+); KB-S02[OUTDATED] SAML certificate rotation for Okta (legacy); KB-0061 SSO SAML configuration (Okta); KB-0068 SSO SAML configuration (LATAM)"
+    },
+    {
+      "step": 4,
+      "tool": "get_kb_article",
+      "thought": "KB-S02 is outdated; following the link to its replacement KB-S01.",
+      "args": {
+        "article_id": "KB-S01"
+      },
+      "observation": "KB-S01 SAML certificate rotation for Okta (v8+)"
+    },
+    {
+      "step": 5,
+      "tool": "submit_triage",
+      "thought": "I have enough evidence; submitting the decision.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

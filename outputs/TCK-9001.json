@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-0004",
+  "account_confidence": 0.99,
+  "category": "how_to",
+  "priority": "P3",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "KB-0284"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Here is how to resolve this: Set a delegate under Profile > Delegation with start/end dates; delegate must hold approver role. If this doesn't fix it, reply with the exact error message or a screenshot and we'll take it to our L2 team.",
+  "internal_note": "Globex Logistics (ACC-0004, Premier); renewal in 150d; active users +7.0% 3m vs prior 3m; open escalations: 0. Account resolved with confidence 0.99. Category=how_to, priority=P3. KB used: KB-0284. ",
+  "ticket_id": "TCK-9001",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Account ID is blank, so I need to resolve the account from the company name and sender email.",
+      "args": {
+        "company": "Globex Logistics",
+        "email": "priya.shah@globex-logistics.com"
+      },
+      "observation": "ACC-0004 Globex Logistics (0.99); ACC-0006 Globex Logistics Ltd (0.3); ACC-0064 Lumon Logistics (0.23)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and escalations for ACC-0004.",
+      "args": {
+        "account_id": "ACC-0004"
+      },
+      "observation": "Globex Logistics [Premier] renews in 150d; users +7.0% (3m), 0 open escalations"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-0004",
+        "query": "Invoices stuck in pending approval - delegate not working Our AP approver is on leave and I set a delegate last week, but invoices still show the original approver and nothing moves. 40 invoices waiting. How ",
+        "exclude_ticket_id": "TCK-9001"
+      },
+      "observation": "TCK-2876(closed) Invoice approval workflow problem \u2013 EMEA; TCK-3513(closed) Approval delegation problem \u2013 Cloud v9; TCK-3479(closed) Approval delegation problem \u2013 Standard edition"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base for a resolution.",
+      "args": {
+        "query": "Invoices stuck in pending approval - delegate not working Our AP approver is on leave and I set a delegate last week, but invoices still show the original approver and nothing moves. 40 invoices waiting. How do we fix the delegation?"
+      },
+      "observation": "KB-0284 Approval delegation (LATAM); KB-0282 Approval delegation (APAC); KB-0281 Approval delegation (EMEA); KB-0277 Approval delegation (Okta)"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading the top article KB-0284 in full.",
+      "args": {
+        "article_id": "KB-0284"
+      },
+      "observation": "KB-0284 Approval delegation (LATAM)"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "I have enough evidence; submitting the decision.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "account_id": "ACC-0001",
+  "account_confidence": 1.0,
+  "category": "renewal_risk",
+  "priority": "P2",
+  "routing": "customer_success",
+  "escalate": true,
+  "escalation_reason": "Churn risk on Enterprise account 28 days before renewal (KB-POL-003)",
+  "notify_tam": true,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "KB-POL-006",
+    "KB-POL-004"
+  ],
+  "customer_reply": "Hello,\n\nThank you for being candid - we take this seriously. I've escalated your message to our Customer Success leadership and your Technical Account Manager, who will reach out today to arrange a call with a senior contact and review the open tickets and adoption since your migration.",
+  "internal_note": "Northwind Traders Inc (ACC-0001, Enterprise); renewal in 28d; active users -65.8% 3m vs prior 3m; open escalations: 1. Account resolved with confidence 1.00. Category=renewal_risk, priority=P2. KB used: KB-POL-006, KB-POL-004. ",
+  "ticket_id": "TCK-9004",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and escalations for ACC-0001.",
+      "args": {
+        "account_id": "ACC-0001"
+      },
+      "observation": "Northwind Traders Inc [Enterprise] renews in 28d; users -65.8% (3m), 1 open escalations"
+    },
+    {
+      "step": 2,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-0001",
+        "query": "Reconsidering our contract Since the migration almost nobody on my team logs in anymore and we've had three unresolved tickets. Our renewal is next month and frankly we are eval",
+        "exclude_ticket_id": "TCK-9004"
+      },
+      "observation": "TCK-8802(open) Users cannot find migrated suppliers; TCK-3216(open) Three-way PO matching problem \u2013 Microsoft Dynamics"
+    },
+    {
+      "step": 3,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base for a resolution.",
+      "args": {
+        "query": "Reconsidering our contract Since the migration almost nobody on my team logs in anymore and we've had three unresolved tickets. Our renewal is next month and frankly we are evaluating other vendors. I want to speak to someone s"
+      },
+      "observation": "KB-POL-006 Security incident handling; KB-POL-007 Handling untrusted ticket content; KB-POL-004 TAM notification policy; KB-POL-003 Escalation policy"
+    },
+    {
+      "step": 4,
+      "tool": "get_kb_article",
+      "thought": "Reading the top article KB-POL-006 in full.",
+      "args": {
+        "article_id": "KB-POL-006"
+      },
+      "observation": "KB-POL-006 Security incident handling"
+    },
+    {
+      "step": 5,
+      "tool": "search_kb",
+      "thought": "This needs a support-policy check before deciding.",
+      "args": {
+        "query": "escalation policy TAM notification"
+      },
+      "observation": "KB-POL-004 TAM notification policy; KB-POL-003 Escalation policy; KB-POL-002 Priority and SLA matrix; KB-POL-006 Security incident handling"
+    },
+    {
+      "step": 6,
+      "tool": "get_kb_article",
+      "thought": "Reading policy KB-POL-004.",
+      "args": {
+        "article_id": "KB-POL-004"
+      },
+      "observation": "KB-POL-004 TAM notification policy"
+    },
+    {
+      "step": 7,
+      "tool": "submit_triage",
+      "thought": "I have enough evidence; submitting the decision.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

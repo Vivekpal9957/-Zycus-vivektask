@@ -1,0 +1,76 @@
+{
+  "account_id": "ACC-0005",
+  "account_confidence": 1.0,
+  "category": "integration",
+  "priority": "P2",
+  "routing": "L2_support",
+  "escalate": true,
+  "escalation_reason": "Account has open escalation ESC-102: ERP export failures blocking close",
+  "notify_tam": true,
+  "is_duplicate": true,
+  "duplicate_of": "TCK-8801",
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "KB-S04"
+  ],
+  "customer_reply": "Hello,\n\nThanks for following up. This matches your open ticket TCK-8801, so we've linked them and will keep updates on that thread. Because it affects your month-end close, we've also raised its priority with our ERP team and will update you shortly.",
+  "internal_note": "Initech Manufacturing (ACC-0005, Enterprise); renewal in 300d; active users +2.0% 3m vs prior 3m; open escalations: 1. Account resolved with confidence 1.00. Category=integration, priority=P2. Duplicate of TCK-8801. KB used: KB-S04. ",
+  "ticket_id": "TCK-9003",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and escalations for ACC-0005.",
+      "args": {
+        "account_id": "ACC-0005"
+      },
+      "observation": "Initech Manufacturing [Enterprise] renews in 300d; users +2.0% (3m), 1 open escalations"
+    },
+    {
+      "step": 2,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-0005",
+        "query": "Re: SAP PO export still failing - any update? Following up. PO exports to SAP still fail with error 4021 since Monday. This is blocking our month-end. Any update?",
+        "exclude_ticket_id": "TCK-9003"
+      },
+      "observation": "TCK-8801(open) SAP PO export failing with error 4021; TCK-3751(closed) Three-way PO matching problem \u2013 Enterprise edition; TCK-1846(resolved) Reports and spend analytics problem \u2013 Microsoft Dy"
+    },
+    {
+      "step": 3,
+      "tool": "get_ticket",
+      "thought": "TCK-8801 is open and very similar - verifying it is the same problem.",
+      "args": {
+        "ticket_id": "TCK-8801"
+      },
+      "observation": "TCK-8801 open: SAP PO export failing with error 4021"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base for a resolution.",
+      "args": {
+        "query": "Re: SAP PO export still failing - any update? Following up. PO exports to SAP still fail with error 4021 since Monday. This is blocking our month-end. Any update?"
+      },
+      "observation": "KB-S04 SAP PO export error 4021; KB-0307 Mobile app (SAP S/4HANA); KB-0019 Three-way PO matching (SAP S/4HANA); KB-0091 ERP integration sync (SAP S/4HANA)"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading the top article KB-S04 in full.",
+      "args": {
+        "article_id": "KB-S04"
+      },
+      "observation": "KB-S04 SAP PO export error 4021"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "I have enough evidence; submitting the decision.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

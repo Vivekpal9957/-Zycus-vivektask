@@ -1,0 +1,77 @@
+{
+  "account_id": "ACC-0002",
+  "account_confidence": 0.99,
+  "category": "data_quality",
+  "priority": "P3",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": false,
+  "clarification_questions": [],
+  "kb_articles": [
+    "KB-S03"
+  ],
+  "customer_reply": "Hello,\n\nThanks for contacting us. Here is how to resolve this: 'UOM invalid' means the unit of measure is not in the UOM master list. Use ISO codes (EA, BX, KG). Download current template v3 from Catalogs > Import > Template and map the UOM column; re-upload. If this doesn't fix it, reply with the exact error message or a screenshot and we'll take it to our L2 team.",
+  "internal_note": "Acme Corporation (ACC-0002, Premier); renewal in 210d; active users +0.5% 3m vs prior 3m; open escalations: 0. Account resolved with confidence 0.99. Category=data_quality, priority=P3. KB used: KB-S03. ",
+  "ticket_id": "TCK-9002",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Account ID is blank, so I need to resolve the account from the company name and sender email.",
+      "args": {
+        "company": "Acme",
+        "email": "sam.lee@acme.com"
+      },
+      "observation": "ACC-0002 Acme Corporation (0.99); ACC-0003 Acme Corp Holdings (0.3); ACC-0037 Acme Group (0.3)"
+    },
+    {
+      "step": 2,
+      "tool": "get_account_context",
+      "thought": "Checking health, renewal and escalations for ACC-0002.",
+      "args": {
+        "account_id": "ACC-0002"
+      },
+      "observation": "Acme Corporation [Premier] renews in 210d; users +0.5% (3m), 0 open escalations"
+    },
+    {
+      "step": 3,
+      "tool": "search_tickets",
+      "thought": "Looking for duplicates and history on this account.",
+      "args": {
+        "account_id": "ACC-0002",
+        "query": "Supplier catalog CSV upload fails: 'UOM invalid' Uploading our catalog CSV gives validation error UOM invalid on 312 rows. We used the same file last quarter. What changed?",
+        "exclude_ticket_id": "TCK-9002"
+      },
+      "observation": "TCK-1651(closed) Catalog and data import CSV problem \u2013 North Americ; TCK-2934(resolved) Punch-out catalog problem \u2013 APAC; TCK-2593(closed) Punch-out catalog problem \u2013 Ping Identity"
+    },
+    {
+      "step": 4,
+      "tool": "search_kb",
+      "thought": "Searching the knowledge base for a resolution.",
+      "args": {
+        "query": "Supplier catalog CSV upload fails: 'UOM invalid' Uploading our catalog CSV gives validation error UOM invalid on 312 rows. We used the same file last quarter. What changed?"
+      },
+      "observation": "KB-S03 Catalog CSV import: UOM validation errors; KB-0176 Catalog and data import CSV (LATAM); KB-0174 Catalog and data import CSV (APAC); KB-0173 Catalog and data import CSV (EMEA)"
+    },
+    {
+      "step": 5,
+      "tool": "get_kb_article",
+      "thought": "Reading the top article KB-S03 in full.",
+      "args": {
+        "article_id": "KB-S03"
+      },
+      "observation": "KB-S03 Catalog CSV import: UOM validation errors"
+    },
+    {
+      "step": 6,
+      "tool": "submit_triage",
+      "thought": "I have enough evidence; submitting the decision.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}

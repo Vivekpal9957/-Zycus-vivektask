@@ -1,0 +1,1802 @@
+[
+ {
+  "id": "ACC-0001",
+  "name": "Northwind Traders Inc",
+  "domain": "northwindtraders.com",
+  "tier": "Enterprise",
+  "renewal": "2026-11-24",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0002",
+  "name": "Acme Corporation",
+  "domain": "acme.com",
+  "tier": "Premier",
+  "renewal": "2027-05-25",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0003",
+  "name": "Acme Corp Holdings",
+  "domain": "acmeholdings.io",
+  "tier": "Standard",
+  "renewal": "2027-02-24",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0004",
+  "name": "Globex Logistics",
+  "domain": "globex-logistics.com",
+  "tier": "Premier",
+  "renewal": "2027-03-26",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0005",
+  "name": "Initech Manufacturing",
+  "domain": "initech-mfg.com",
+  "tier": "Enterprise",
+  "renewal": "2027-08-23",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0006",
+  "name": "Globex Logistics Ltd",
+  "domain": "globexlogistics.co.uk",
+  "tier": "Standard",
+  "renewal": "2027-01-25",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0007",
+  "name": "Stark Energy Group",
+  "domain": "starkenergy.com",
+  "tier": "Enterprise",
+  "renewal": "2027-07-14",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0008",
+  "name": "Hooli Systems",
+  "domain": "hooli.systems",
+  "tier": "Premier",
+  "renewal": "2027-01-10",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0009",
+  "name": "Wonka Foods",
+  "domain": "wonkafoods.com",
+  "tier": "Standard",
+  "renewal": "2027-04-25",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0010",
+  "name": "Soylent Retail",
+  "domain": "soylentretail.com",
+  "tier": "Standard",
+  "renewal": "2026-12-11",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0011",
+  "name": "Cyberdyne Industries",
+  "domain": "cyberdyneindustries.io",
+  "tier": "Standard",
+  "renewal": "2026-12-13",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0012",
+  "name": "Duff Corp",
+  "domain": "duffcorp.net",
+  "tier": "Premier",
+  "renewal": "2026-12-20",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0013",
+  "name": "Initech Holdings",
+  "domain": "initechholdings.com",
+  "tier": "Standard",
+  "renewal": "2026-12-06",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0014",
+  "name": "Acme Manufacturing",
+  "domain": "acmemanufacturing.net",
+  "tier": "Standard",
+  "renewal": "2027-08-28",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0015",
+  "name": "Soylent Corp",
+  "domain": "soylentcorp.net",
+  "tier": "Standard",
+  "renewal": "2027-04-03",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0016",
+  "name": "Black Mesa Logistics",
+  "domain": "blackmesalogistics.net",
+  "tier": "Premier",
+  "renewal": "2027-10-21",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0017",
+  "name": "Duff Retail",
+  "domain": "duffretail.net",
+  "tier": "Enterprise",
+  "renewal": "2026-12-25",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0018",
+  "name": "Sterling Holdings",
+  "domain": "sterlingholdings.io",
+  "tier": "Standard",
+  "renewal": "2027-06-12",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0019",
+  "name": "Duff Pharma",
+  "domain": "duffpharma.io",
+  "tier": "Premier",
+  "renewal": "2027-02-06",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0020",
+  "name": "Duff Group",
+  "domain": "duffgroup.net",
+  "tier": "Premier",
+  "renewal": "2027-04-30",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0021",
+  "name": "Sterling Logistics",
+  "domain": "sterlinglogistics.com",
+  "tier": "Standard",
+  "renewal": "2027-01-29",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0022",
+  "name": "Zenith Pharma",
+  "domain": "zenithpharma.io",
+  "tier": "Enterprise",
+  "renewal": "2027-10-14",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0023",
+  "name": "Cyberdyne Partners",
+  "domain": "cyberdynepartners.io",
+  "tier": "Standard",
+  "renewal": "2027-08-29",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0024",
+  "name": "Veridian Logistics",
+  "domain": "veridianlogistics.io",
+  "tier": "Premier",
+  "renewal": "2027-10-12",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0025",
+  "name": "Prestige Partners",
+  "domain": "prestigepartners.io",
+  "tier": "Standard",
+  "renewal": "2027-10-20",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0026",
+  "name": "Dunder Foods",
+  "domain": "dunderfoods.net",
+  "tier": "Premier",
+  "renewal": "2027-06-30",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0027",
+  "name": "Pied Corp",
+  "domain": "piedcorp.com",
+  "tier": "Standard",
+  "renewal": "2027-01-11",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0028",
+  "name": "Gringotts Pharma",
+  "domain": "gringottspharma.com",
+  "tier": "Enterprise",
+  "renewal": "2027-05-30",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0029",
+  "name": "Veridian Foods",
+  "domain": "veridianfoods.net",
+  "tier": "Premier",
+  "renewal": "2027-06-06",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0030",
+  "name": "Soylent Industries",
+  "domain": "soylentindustries.com",
+  "tier": "Enterprise",
+  "renewal": "2027-03-04",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0031",
+  "name": "Pied Retail",
+  "domain": "piedretail.com",
+  "tier": "Premier",
+  "renewal": "2026-11-08",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0032",
+  "name": "Black Mesa Systems",
+  "domain": "blackmesasystems.net",
+  "tier": "Standard",
+  "renewal": "2027-01-09",
+  "csm": "Dana Whitfield",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0033",
+  "name": "Rekall Manufacturing",
+  "domain": "rekallmanufacturing.net",
+  "tier": "Premier",
+  "renewal": "2027-05-29",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0034",
+  "name": "Pied Manufacturing",
+  "domain": "piedmanufacturing.io",
+  "tier": "Enterprise",
+  "renewal": "2026-12-10",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0035",
+  "name": "Wayne Logistics",
+  "domain": "waynelogistics.io",
+  "tier": "Standard",
+  "renewal": "2026-12-28",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0036",
+  "name": "Tyrell Retail",
+  "domain": "tyrellretail.com",
+  "tier": "Enterprise",
+  "renewal": "2027-02-20",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0037",
+  "name": "Acme Group",
+  "domain": "acmegroup.io",
+  "tier": "Standard",
+  "renewal": "2027-07-06",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0038",
+  "name": "Nakatomi Pharma",
+  "domain": "nakatomipharma.io",
+  "tier": "Premier",
+  "renewal": "2027-04-14",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0039",
+  "name": "Umbrella Partners",
+  "domain": "umbrellapartners.io",
+  "tier": "Standard",
+  "renewal": "2027-07-09",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0040",
+  "name": "Hooli Energy",
+  "domain": "hoolienergy.io",
+  "tier": "Enterprise",
+  "renewal": "2027-08-11",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0041",
+  "name": "Acme Logistics",
+  "domain": "acmelogistics.net",
+  "tier": "Standard",
+  "renewal": "2027-07-29",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0042",
+  "name": "Tyrell Holdings",
+  "domain": "tyrellholdings.net",
+  "tier": "Standard",
+  "renewal": "2027-07-21",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0043",
+  "name": "Lumon Holdings",
+  "domain": "lumonholdings.io",
+  "tier": "Standard",
+  "renewal": "2027-03-02",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0044",
+  "name": "Tyrell Partners",
+  "domain": "tyrellpartners.com",
+  "tier": "Standard",
+  "renewal": "2027-03-29",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0045",
+  "name": "Hooli Partners",
+  "domain": "hoolipartners.net",
+  "tier": "Standard",
+  "renewal": "2027-06-22",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0046",
+  "name": "Umbrella Holdings",
+  "domain": "umbrellaholdings.io",
+  "tier": "Enterprise",
+  "renewal": "2027-02-18",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0047",
+  "name": "Tyrell Manufacturing",
+  "domain": "tyrellmanufacturing.com",
+  "tier": "Standard",
+  "renewal": "2027-01-06",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0048",
+  "name": "Pied Industries",
+  "domain": "piedindustries.io",
+  "tier": "Standard",
+  "renewal": "2027-04-25",
+  "csm": "Dana Whitfield",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0049",
+  "name": "Massive Foods",
+  "domain": "massivefoods.net",
+  "tier": "Standard",
+  "renewal": "2027-01-26",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0050",
+  "name": "Northwind Industries",
+  "domain": "northwindindustries.net",
+  "tier": "Standard",
+  "renewal": "2027-10-07",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0051",
+  "name": "Bluth Systems",
+  "domain": "bluthsystems.com",
+  "tier": "Standard",
+  "renewal": "2027-01-12",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0052",
+  "name": "Lumon Partners",
+  "domain": "lumonpartners.net",
+  "tier": "Enterprise",
+  "renewal": "2027-01-16",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0053",
+  "name": "Veridian Holdings",
+  "domain": "veridianholdings.com",
+  "tier": "Premier",
+  "renewal": "2027-04-04",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0054",
+  "name": "Vandelay Energy",
+  "domain": "vandelayenergy.io",
+  "tier": "Standard",
+  "renewal": "2026-12-07",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0055",
+  "name": "Bluth Retail",
+  "domain": "bluthretail.net",
+  "tier": "Premier",
+  "renewal": "2027-07-20",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0056",
+  "name": "Aperture Energy",
+  "domain": "apertureenergy.com",
+  "tier": "Standard",
+  "renewal": "2027-02-07",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0057",
+  "name": "Wayne Industries",
+  "domain": "wayneindustries.io",
+  "tier": "Standard",
+  "renewal": "2027-01-06",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0058",
+  "name": "Bluth Energy",
+  "domain": "bluthenergy.net",
+  "tier": "Standard",
+  "renewal": "2026-12-30",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0059",
+  "name": "Hooli Group",
+  "domain": "hooligroup.com",
+  "tier": "Standard",
+  "renewal": "2027-07-23",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0060",
+  "name": "Monarch Logistics",
+  "domain": "monarchlogistics.io",
+  "tier": "Premier",
+  "renewal": "2027-07-22",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0061",
+  "name": "Massive Energy",
+  "domain": "massiveenergy.net",
+  "tier": "Standard",
+  "renewal": "2027-07-23",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0062",
+  "name": "Zenith Energy",
+  "domain": "zenithenergy.com",
+  "tier": "Standard",
+  "renewal": "2027-01-15",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0063",
+  "name": "Cyberdyne Logistics",
+  "domain": "cyberdynelogistics.net",
+  "tier": "Premier",
+  "renewal": "2026-12-13",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0064",
+  "name": "Lumon Logistics",
+  "domain": "lumonlogistics.com",
+  "tier": "Standard",
+  "renewal": "2027-10-01",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0065",
+  "name": "Vandelay Industries",
+  "domain": "vandelayindustries.io",
+  "tier": "Premier",
+  "renewal": "2026-12-24",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0066",
+  "name": "Wayne Manufacturing",
+  "domain": "waynemanufacturing.com",
+  "tier": "Enterprise",
+  "renewal": "2027-06-14",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0067",
+  "name": "Oscorp Holdings",
+  "domain": "oscorpholdings.io",
+  "tier": "Premier",
+  "renewal": "2027-05-12",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0068",
+  "name": "Black Mesa Pharma",
+  "domain": "blackmesapharma.io",
+  "tier": "Standard",
+  "renewal": "2027-05-21",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0069",
+  "name": "Aperture Logistics",
+  "domain": "aperturelogistics.com",
+  "tier": "Standard",
+  "renewal": "2027-03-03",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0070",
+  "name": "Vandelay Group",
+  "domain": "vandelaygroup.com",
+  "tier": "Standard",
+  "renewal": "2027-02-06",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0071",
+  "name": "Nakatomi Manufacturing",
+  "domain": "nakatomimanufacturing.io",
+  "tier": "Premier",
+  "renewal": "2027-08-07",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0072",
+  "name": "Initech Group",
+  "domain": "initechgroup.com",
+  "tier": "Standard",
+  "renewal": "2027-02-07",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0073",
+  "name": "Vandelay Corp",
+  "domain": "vandelaycorp.net",
+  "tier": "Enterprise",
+  "renewal": "2027-03-19",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0074",
+  "name": "Nakatomi Logistics",
+  "domain": "nakatomilogistics.io",
+  "tier": "Enterprise",
+  "renewal": "2027-08-16",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0075",
+  "name": "Sterling Industries",
+  "domain": "sterlingindustries.com",
+  "tier": "Standard",
+  "renewal": "2027-03-08",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0076",
+  "name": "Wayne Holdings",
+  "domain": "wayneholdings.io",
+  "tier": "Standard",
+  "renewal": "2027-08-04",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0077",
+  "name": "Bluth Industries",
+  "domain": "bluthindustries.io",
+  "tier": "Premier",
+  "renewal": "2026-11-15",
+  "csm": "Mei Tan",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0078",
+  "name": "Northwind Corp",
+  "domain": "northwindcorp.net",
+  "tier": "Standard",
+  "renewal": "2027-02-11",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0079",
+  "name": "Umbrella Manufacturing",
+  "domain": "umbrellamanufacturing.net",
+  "tier": "Premier",
+  "renewal": "2027-07-17",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0080",
+  "name": "Dunder Holdings",
+  "domain": "dunderholdings.com",
+  "tier": "Premier",
+  "renewal": "2027-09-27",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0081",
+  "name": "Tyrell Corp",
+  "domain": "tyrellcorp.com",
+  "tier": "Enterprise",
+  "renewal": "2027-09-22",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0082",
+  "name": "Wayne Corp",
+  "domain": "waynecorp.com",
+  "tier": "Standard",
+  "renewal": "2027-05-20",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0083",
+  "name": "Dunder Group",
+  "domain": "dundergroup.com",
+  "tier": "Premier",
+  "renewal": "2027-01-25",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0084",
+  "name": "Northwind Group",
+  "domain": "northwindgroup.io",
+  "tier": "Standard",
+  "renewal": "2027-08-13",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0085",
+  "name": "Globex Group",
+  "domain": "globexgroup.com",
+  "tier": "Premier",
+  "renewal": "2026-11-06",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0086",
+  "name": "Initech Pharma",
+  "domain": "initechpharma.io",
+  "tier": "Standard",
+  "renewal": "2027-02-16",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0087",
+  "name": "Stark Foods",
+  "domain": "starkfoods.net",
+  "tier": "Enterprise",
+  "renewal": "2026-11-17",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0088",
+  "name": "Acme Holdings",
+  "domain": "acmeholdings.com",
+  "tier": "Standard",
+  "renewal": "2027-08-03",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0089",
+  "name": "Monarch Systems",
+  "domain": "monarchsystems.net",
+  "tier": "Standard",
+  "renewal": "2027-01-21",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0090",
+  "name": "Globex Partners",
+  "domain": "globexpartners.net",
+  "tier": "Standard",
+  "renewal": "2027-07-22",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0091",
+  "name": "Veridian Manufacturing",
+  "domain": "veridianmanufacturing.net",
+  "tier": "Standard",
+  "renewal": "2027-10-21",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0092",
+  "name": "Stark Manufacturing",
+  "domain": "starkmanufacturing.io",
+  "tier": "Standard",
+  "renewal": "2027-05-17",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0093",
+  "name": "Acme Corp",
+  "domain": "acmecorp.net",
+  "tier": "Standard",
+  "renewal": "2027-03-11",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0094",
+  "name": "Northwind Pharma",
+  "domain": "northwindpharma.com",
+  "tier": "Standard",
+  "renewal": "2027-07-21",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0095",
+  "name": "Pied Group",
+  "domain": "piedgroup.com",
+  "tier": "Standard",
+  "renewal": "2027-03-06",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0096",
+  "name": "Prestige Manufacturing",
+  "domain": "prestigemanufacturing.io",
+  "tier": "Premier",
+  "renewal": "2027-05-20",
+  "csm": "Dana Whitfield",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0097",
+  "name": "Zenith Manufacturing",
+  "domain": "zenithmanufacturing.io",
+  "tier": "Standard",
+  "renewal": "2027-09-17",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0098",
+  "name": "Cyberdyne Group",
+  "domain": "cyberdynegroup.net",
+  "tier": "Standard",
+  "renewal": "2027-04-10",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0099",
+  "name": "Bluth Logistics",
+  "domain": "bluthlogistics.net",
+  "tier": "Premier",
+  "renewal": "2027-07-14",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0100",
+  "name": "Massive Pharma",
+  "domain": "massivepharma.io",
+  "tier": "Standard",
+  "renewal": "2027-08-14",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0101",
+  "name": "Massive Logistics",
+  "domain": "massivelogistics.net",
+  "tier": "Standard",
+  "renewal": "2027-06-24",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0102",
+  "name": "Hooli Holdings",
+  "domain": "hooliholdings.com",
+  "tier": "Standard",
+  "renewal": "2027-01-17",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0103",
+  "name": "Stark Retail",
+  "domain": "starkretail.net",
+  "tier": "Standard",
+  "renewal": "2027-01-02",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0104",
+  "name": "Pied Pharma",
+  "domain": "piedpharma.io",
+  "tier": "Enterprise",
+  "renewal": "2026-11-07",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0105",
+  "name": "Gringotts Group",
+  "domain": "gringottsgroup.net",
+  "tier": "Enterprise",
+  "renewal": "2027-05-01",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0106",
+  "name": "Umbrella Systems",
+  "domain": "umbrellasystems.com",
+  "tier": "Premier",
+  "renewal": "2027-04-28",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0107",
+  "name": "Zenith Holdings",
+  "domain": "zenithholdings.net",
+  "tier": "Enterprise",
+  "renewal": "2027-04-03",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0108",
+  "name": "Initech Foods",
+  "domain": "initechfoods.io",
+  "tier": "Standard",
+  "renewal": "2027-09-03",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0109",
+  "name": "Zenith Foods",
+  "domain": "zenithfoods.io",
+  "tier": "Standard",
+  "renewal": "2027-03-29",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0110",
+  "name": "Wonka Manufacturing",
+  "domain": "wonkamanufacturing.com",
+  "tier": "Premier",
+  "renewal": "2027-03-22",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0111",
+  "name": "Lumon Foods",
+  "domain": "lumonfoods.com",
+  "tier": "Standard",
+  "renewal": "2027-09-25",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0112",
+  "name": "Prestige Logistics",
+  "domain": "prestigelogistics.com",
+  "tier": "Standard",
+  "renewal": "2027-06-04",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0113",
+  "name": "Stark Industries",
+  "domain": "starkindustries.io",
+  "tier": "Premier",
+  "renewal": "2027-03-30",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0114",
+  "name": "Gringotts Manufacturing",
+  "domain": "gringottsmanufacturing.com",
+  "tier": "Premier",
+  "renewal": "2027-08-18",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0115",
+  "name": "Rekall Pharma",
+  "domain": "rekallpharma.net",
+  "tier": "Premier",
+  "renewal": "2027-04-25",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0116",
+  "name": "Stark Energy",
+  "domain": "starkenergy.com",
+  "tier": "Premier",
+  "renewal": "2027-02-03",
+  "csm": "Mei Tan",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0117",
+  "name": "Cyberdyne Holdings",
+  "domain": "cyberdyneholdings.io",
+  "tier": "Premier",
+  "renewal": "2027-08-24",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0118",
+  "name": "Prestige Foods",
+  "domain": "prestigefoods.io",
+  "tier": "Premier",
+  "renewal": "2027-08-01",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0119",
+  "name": "Vandelay Systems",
+  "domain": "vandelaysystems.com",
+  "tier": "Premier",
+  "renewal": "2027-08-27",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0120",
+  "name": "Aperture Manufacturing",
+  "domain": "aperturemanufacturing.com",
+  "tier": "Enterprise",
+  "renewal": "2027-03-13",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0121",
+  "name": "Acme Pharma",
+  "domain": "acmepharma.io",
+  "tier": "Standard",
+  "renewal": "2026-11-17",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0122",
+  "name": "Oscorp Partners",
+  "domain": "oscorppartners.io",
+  "tier": "Standard",
+  "renewal": "2027-07-14",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0123",
+  "name": "Gringotts Energy",
+  "domain": "gringottsenergy.io",
+  "tier": "Standard",
+  "renewal": "2027-03-13",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0124",
+  "name": "Dunder Manufacturing",
+  "domain": "dundermanufacturing.io",
+  "tier": "Enterprise",
+  "renewal": "2026-11-26",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0125",
+  "name": "Zenith Corp",
+  "domain": "zenithcorp.net",
+  "tier": "Standard",
+  "renewal": "2027-01-10",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0126",
+  "name": "Dunder Logistics",
+  "domain": "dunderlogistics.com",
+  "tier": "Enterprise",
+  "renewal": "2027-08-01",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0127",
+  "name": "Vandelay Holdings",
+  "domain": "vandelayholdings.net",
+  "tier": "Enterprise",
+  "renewal": "2027-08-08",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0128",
+  "name": "Pied Energy",
+  "domain": "piedenergy.com",
+  "tier": "Standard",
+  "renewal": "2026-11-20",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0129",
+  "name": "Globex Corp",
+  "domain": "globexcorp.com",
+  "tier": "Premier",
+  "renewal": "2027-10-17",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0130",
+  "name": "Bluth Foods",
+  "domain": "bluthfoods.io",
+  "tier": "Premier",
+  "renewal": "2026-11-23",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0131",
+  "name": "Gringotts Holdings",
+  "domain": "gringottsholdings.com",
+  "tier": "Standard",
+  "renewal": "2027-07-22",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0132",
+  "name": "Pied Holdings",
+  "domain": "piedholdings.io",
+  "tier": "Standard",
+  "renewal": "2027-02-13",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0133",
+  "name": "Soylent Group",
+  "domain": "soylentgroup.io",
+  "tier": "Enterprise",
+  "renewal": "2027-09-21",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0134",
+  "name": "Rekall Holdings",
+  "domain": "rekallholdings.io",
+  "tier": "Premier",
+  "renewal": "2027-10-12",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0135",
+  "name": "Globex Holdings",
+  "domain": "globexholdings.com",
+  "tier": "Standard",
+  "renewal": "2027-01-17",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0136",
+  "name": "Dunder Corp",
+  "domain": "dundercorp.com",
+  "tier": "Premier",
+  "renewal": "2027-04-15",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0137",
+  "name": "Zenith Industries",
+  "domain": "zenithindustries.io",
+  "tier": "Enterprise",
+  "renewal": "2027-10-06",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0138",
+  "name": "Veridian Systems",
+  "domain": "veridiansystems.io",
+  "tier": "Premier",
+  "renewal": "2026-12-31",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0139",
+  "name": "Vandelay Logistics",
+  "domain": "vandelaylogistics.io",
+  "tier": "Premier",
+  "renewal": "2027-01-08",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0140",
+  "name": "Tyrell Group",
+  "domain": "tyrellgroup.io",
+  "tier": "Enterprise",
+  "renewal": "2027-07-06",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0141",
+  "name": "Northwind Manufacturing",
+  "domain": "northwindmanufacturing.io",
+  "tier": "Premier",
+  "renewal": "2027-09-22",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0142",
+  "name": "Gringotts Corp",
+  "domain": "gringottscorp.io",
+  "tier": "Enterprise",
+  "renewal": "2026-12-07",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0143",
+  "name": "Rekall Retail",
+  "domain": "rekallretail.io",
+  "tier": "Premier",
+  "renewal": "2027-04-26",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0144",
+  "name": "Dunder Systems",
+  "domain": "dundersystems.io",
+  "tier": "Premier",
+  "renewal": "2027-09-06",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0145",
+  "name": "Umbrella Pharma",
+  "domain": "umbrellapharma.net",
+  "tier": "Standard",
+  "renewal": "2027-05-22",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0146",
+  "name": "Veridian Pharma",
+  "domain": "veridianpharma.com",
+  "tier": "Standard",
+  "renewal": "2027-02-07",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0147",
+  "name": "Veridian Partners",
+  "domain": "veridianpartners.com",
+  "tier": "Standard",
+  "renewal": "2027-04-22",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0148",
+  "name": "Initech Energy",
+  "domain": "initechenergy.com",
+  "tier": "Premier",
+  "renewal": "2027-01-26",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0149",
+  "name": "Globex Pharma",
+  "domain": "globexpharma.net",
+  "tier": "Standard",
+  "renewal": "2027-01-27",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0150",
+  "name": "Hooli Logistics",
+  "domain": "hoolilogistics.io",
+  "tier": "Premier",
+  "renewal": "2027-06-22",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0151",
+  "name": "Massive Retail",
+  "domain": "massiveretail.net",
+  "tier": "Premier",
+  "renewal": "2027-08-08",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0152",
+  "name": "Wonka Group",
+  "domain": "wonkagroup.net",
+  "tier": "Premier",
+  "renewal": "2027-03-16",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0153",
+  "name": "Massive Holdings",
+  "domain": "massiveholdings.com",
+  "tier": "Premier",
+  "renewal": "2027-01-23",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0154",
+  "name": "Soylent Energy",
+  "domain": "soylentenergy.net",
+  "tier": "Premier",
+  "renewal": "2026-12-27",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0155",
+  "name": "Umbrella Corp",
+  "domain": "umbrellacorp.io",
+  "tier": "Standard",
+  "renewal": "2027-03-04",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0156",
+  "name": "Soylent Logistics",
+  "domain": "soylentlogistics.com",
+  "tier": "Enterprise",
+  "renewal": "2027-08-31",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0157",
+  "name": "Tyrell Energy",
+  "domain": "tyrellenergy.com",
+  "tier": "Premier",
+  "renewal": "2027-03-19",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0158",
+  "name": "Acme Retail",
+  "domain": "acmeretail.net",
+  "tier": "Standard",
+  "renewal": "2027-02-25",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0159",
+  "name": "Sterling Partners",
+  "domain": "sterlingpartners.net",
+  "tier": "Standard",
+  "renewal": "2026-11-11",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0160",
+  "name": "Wayne Retail",
+  "domain": "wayneretail.io",
+  "tier": "Enterprise",
+  "renewal": "2026-11-22",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0161",
+  "name": "Umbrella Foods",
+  "domain": "umbrellafoods.net",
+  "tier": "Standard",
+  "renewal": "2027-09-29",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0162",
+  "name": "Gringotts Partners",
+  "domain": "gringottspartners.io",
+  "tier": "Premier",
+  "renewal": "2027-03-31",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0163",
+  "name": "Prestige Retail",
+  "domain": "prestigeretail.io",
+  "tier": "Premier",
+  "renewal": "2026-11-15",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0164",
+  "name": "Northwind Foods",
+  "domain": "northwindfoods.com",
+  "tier": "Premier",
+  "renewal": "2026-12-22",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0165",
+  "name": "Massive Industries",
+  "domain": "massiveindustries.com",
+  "tier": "Enterprise",
+  "renewal": "2027-08-15",
+  "csm": "Luis Romero",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0166",
+  "name": "Initech Retail",
+  "domain": "initechretail.net",
+  "tier": "Standard",
+  "renewal": "2027-07-22",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0167",
+  "name": "Wayne Energy",
+  "domain": "wayneenergy.com",
+  "tier": "Standard",
+  "renewal": "2026-12-31",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0168",
+  "name": "Monarch Holdings",
+  "domain": "monarchholdings.io",
+  "tier": "Enterprise",
+  "renewal": "2026-11-28",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0169",
+  "name": "Globex Retail",
+  "domain": "globexretail.net",
+  "tier": "Premier",
+  "renewal": "2027-09-19",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0170",
+  "name": "Sterling Foods",
+  "domain": "sterlingfoods.net",
+  "tier": "Standard",
+  "renewal": "2027-07-06",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0171",
+  "name": "Globex Foods",
+  "domain": "globexfoods.net",
+  "tier": "Enterprise",
+  "renewal": "2027-05-08",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0172",
+  "name": "Soylent Partners",
+  "domain": "soylentpartners.com",
+  "tier": "Enterprise",
+  "renewal": "2027-08-20",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0173",
+  "name": "Sterling Pharma",
+  "domain": "sterlingpharma.net",
+  "tier": "Standard",
+  "renewal": "2027-04-11",
+  "csm": "Priya Nair",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0174",
+  "name": "Duff Holdings",
+  "domain": "duffholdings.io",
+  "tier": "Premier",
+  "renewal": "2027-05-13",
+  "csm": "Priya Nair",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0175",
+  "name": "Northwind Retail",
+  "domain": "northwindretail.io",
+  "tier": "Premier",
+  "renewal": "2027-06-22",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0176",
+  "name": "Lumon Pharma",
+  "domain": "lumonpharma.io",
+  "tier": "Enterprise",
+  "renewal": "2027-01-10",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0177",
+  "name": "Tyrell Logistics",
+  "domain": "tyrelllogistics.io",
+  "tier": "Standard",
+  "renewal": "2027-10-08",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0178",
+  "name": "Acme Industries",
+  "domain": "acmeindustries.com",
+  "tier": "Standard",
+  "renewal": "2027-04-15",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0179",
+  "name": "Monarch Energy",
+  "domain": "monarchenergy.io",
+  "tier": "Standard",
+  "renewal": "2027-01-14",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0180",
+  "name": "Hooli Industries",
+  "domain": "hooliindustries.io",
+  "tier": "Premier",
+  "renewal": "2027-01-29",
+  "csm": "Luis Romero",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0181",
+  "name": "Sterling Group",
+  "domain": "sterlinggroup.com",
+  "tier": "Premier",
+  "renewal": "2027-09-16",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0182",
+  "name": "Stark Group",
+  "domain": "starkgroup.net",
+  "tier": "Standard",
+  "renewal": "2027-07-09",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0183",
+  "name": "Sterling Energy",
+  "domain": "sterlingenergy.com",
+  "tier": "Premier",
+  "renewal": "2026-11-24",
+  "csm": "Luis Romero",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0184",
+  "name": "Gringotts Industries",
+  "domain": "gringottsindustries.net",
+  "tier": "Standard",
+  "renewal": "2027-10-19",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0185",
+  "name": "Wayne Group",
+  "domain": "waynegroup.com",
+  "tier": "Standard",
+  "renewal": "2026-11-30",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0186",
+  "name": "Black Mesa Energy",
+  "domain": "blackmesaenergy.net",
+  "tier": "Standard",
+  "renewal": "2026-12-29",
+  "csm": "Mei Tan",
+  "region": "LATAM"
+ },
+ {
+  "id": "ACC-0187",
+  "name": "Prestige Systems",
+  "domain": "prestigesystems.io",
+  "tier": "Premier",
+  "renewal": "2027-05-13",
+  "csm": "Luis Romero",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0188",
+  "name": "Prestige Corp",
+  "domain": "prestigecorp.io",
+  "tier": "Standard",
+  "renewal": "2027-03-15",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0189",
+  "name": "Wonka Retail",
+  "domain": "wonkaretail.net",
+  "tier": "Premier",
+  "renewal": "2027-07-26",
+  "csm": "Mei Tan",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0190",
+  "name": "Stark Pharma",
+  "domain": "starkpharma.com",
+  "tier": "Standard",
+  "renewal": "2026-11-29",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0191",
+  "name": "Umbrella Energy",
+  "domain": "umbrellaenergy.io",
+  "tier": "Standard",
+  "renewal": "2027-06-05",
+  "csm": "Mei Tan",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0192",
+  "name": "Northwind Holdings",
+  "domain": "northwindholdings.net",
+  "tier": "Enterprise",
+  "renewal": "2026-12-25",
+  "csm": "Dana Whitfield",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0193",
+  "name": "Lumon Group",
+  "domain": "lumongroup.io",
+  "tier": "Standard",
+  "renewal": "2026-11-11",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0194",
+  "name": "Sterling Manufacturing",
+  "domain": "sterlingmanufacturing.net",
+  "tier": "Premier",
+  "renewal": "2027-07-29",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0195",
+  "name": "Black Mesa Corp",
+  "domain": "blackmesacorp.io",
+  "tier": "Enterprise",
+  "renewal": "2027-01-26",
+  "csm": "Dana Whitfield",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0196",
+  "name": "Black Mesa Manufacturing",
+  "domain": "blackmesamanufacturing.com",
+  "tier": "Enterprise",
+  "renewal": "2027-02-16",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0197",
+  "name": "Aperture Group",
+  "domain": "aperturegroup.com",
+  "tier": "Premier",
+  "renewal": "2026-11-30",
+  "csm": "Priya Nair",
+  "region": "NA"
+ },
+ {
+  "id": "ACC-0198",
+  "name": "Gringotts Foods",
+  "domain": "gringottsfoods.net",
+  "tier": "Standard",
+  "renewal": "2026-12-17",
+  "csm": "Priya Nair",
+  "region": "EMEA"
+ },
+ {
+  "id": "ACC-0199",
+  "name": "Rekall Partners",
+  "domain": "rekallpartners.net",
+  "tier": "Standard",
+  "renewal": "2027-03-20",
+  "csm": "Dana Whitfield",
+  "region": "APAC"
+ },
+ {
+  "id": "ACC-0200",
+  "name": "Acme Energy",
+  "domain": "acmeenergy.net",
+  "tier": "Premier",
+  "renewal": "2027-07-31",
+  "csm": "Mei Tan",
+  "region": "APAC"
+ }
+]

@@ -1,0 +1,41 @@
+{
+  "account_id": null,
+  "account_confidence": 0.0,
+  "category": "other",
+  "priority": "P3",
+  "routing": "L1_support",
+  "escalate": false,
+  "escalation_reason": null,
+  "notify_tam": false,
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "needs_clarification": true,
+  "clarification_questions": [
+    "Which company/account are you contacting us about (and your work email)?",
+    "What exactly is not working - which page, action, or error message?",
+    "When did it start, and who is affected?"
+  ],
+  "kb_articles": [],
+  "customer_reply": "Hello, thanks for reaching out. We couldn't match your message to an account and need a few details before we can help: your company name and work email, what exactly isn't working (page, action or error message), and when it started. Reply with those and we'll pick it up right away.",
+  "internal_note": "Sender is a free-mail address with no company; body is too vague to investigate. No account match from resolve_account. Asked for account, symptom and timing. Stopped early - no KB search warranted.",
+  "ticket_id": "TCK-9007",
+  "reasoning_trace": [
+    {
+      "step": 1,
+      "tool": "resolve_account",
+      "thought": "Account ID is blank, so I need to resolve the account from the company name and sender email.",
+      "args": {
+        "company": "",
+        "email": "john.d82@gmail.com"
+      },
+      "observation": " | No match. Free-mail sender and no usable company name."
+    },
+    {
+      "step": 2,
+      "tool": "submit_triage",
+      "thought": "Cannot identify account or problem; asking for clarification rather than guessing.",
+      "args": {},
+      "observation": "submitted"
+    }
+  ]
+}
