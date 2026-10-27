@@ -20,8 +20,9 @@ def triage(ticket, ctx=None, on_event=None, llm=None):
     for step in range(1, MAX_STEPS + 1):
         resp = llm.chat(msgs, T.SPECS)
         calls, thought = resp["tool_calls"], (resp["content"] or "").strip()
-        msgs.append(dict(role="assistant", content=resp["content"] or None, tool_calls=[
-            dict(id=c["id"], type="function", function=dict(name=c["name"], arguments=json.dumps(c["args"]))) for c in calls] or None))
+        am = dict(role="assistant", content=resp["content"] or "")
+        if calls: am["tool_calls"] = [dict(id=c["id"], type="function", function=dict(name=c["name"], arguments=json.dumps(c["args"]))) for c in calls]
+        msgs.append(am)
         if not calls:
             msgs.append(dict(role="user", content="Call submit_triage with your decision now.")); continue
         for c in calls:
@@ -37,7 +38,7 @@ def triage(ticket, ctx=None, on_event=None, llm=None):
             else:
                 try: obs = T.TOOLS[c["name"]](**c["args"])
                 except Exception as e: obs = dict(error=str(e))
-                out = json.dumps(obs)[:3500]
+                out = json.dumps(obs)[:2500]
                 trace.append(dict(step=n, tool=c["name"], thought=thought or "(no commentary)", args=c["args"], observation=_summ(c["name"], obs)))
                 emit(dict(type="step", step=n, tool=c["name"], thought=thought, args=c["args"], observation=_summ(c["name"], obs), raw=obs))
             msgs.append(dict(role="tool", tool_call_id=c["id"], content=out))
