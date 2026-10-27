@@ -1,6 +1,6 @@
 # SOLUTION
 
-> Note: the starter kit was not available in the repo, so `data/`, `schema.py` and the loaders are my reconstruction (synthetic data at the stated volumes: 200 accounts, 3,012 tickets, 397 KB articles). They are isolated, so the real files can be dropped in. The committed `outputs/` were generated with the offline policy (`LLM_PROVIDER=mock`); re-run with `--provider xai` for Grok results.
+> Note: `data/`, `schema.py` and loaders are a reconstruction of the starter kit (not yet swapped for the real files). Committed `outputs/` come from a real LLM run: Groq `openai/gpt-oss-120b`.
 
 ## Design
 A genuine tool-calling loop (`tam_agent/agent.py`): the LLM sees one ticket, chooses a tool, reads the result, and decides the next step or stops by calling `submit_triage` (max 12 steps). Nothing is fixed: a vague free-mail ticket takes 2 calls (resolve → clarify); a security ticket takes 7 (context, history, KB, policy search, policy read).
@@ -19,8 +19,14 @@ UI: `python -m ui.server` streams each step live (SSE) with account health, KB c
 ## Scale (10x: 30k tickets, 4k articles)
 Nothing large enters a prompt, so token cost per ticket is flat (~5–8 calls). In-memory BM25 is fine at this size but retrieval quality drops with 4k near-duplicate articles: add embeddings + hybrid rank fusion, a reranker, metadata filters (product/version/edition), and a vector/Postgres store with incremental indexing. Tickets: per-account index keeps history search cheap. Latency is dominated by sequential LLM calls (~2–4 s each): cache account context, run independent lookups in parallel, use a small model for easy tickets. Stale-article detection should be an offline job.
 
+## Observed results (real run, 10 review tickets)
+- 10/10 schema-valid. Tool calls per ticket: 6,5,6,3,7,5,2,6,6,5 (avg 5.1; vague TCK-9007 = 2, SSO TCK-9005 = 7) - the agent varies its path.
+- Worked: vague free-mail ticket -> clarification; duplicate TCK-9003 -> TCK-8801; SSO ticket cited current KB-S01, not outdated KB-S02; injection in TCK-9009 ignored (P3, no escalation); refund request TCK-9010 cited policy KB-POL-001, no promise; security TCK-9006 -> P1 security_team, escalated.
+- What failed / fixed: Groq retired llama-3.3 (switched model); free-tier 429 rate limits (added retry/backoff in llm.py); `tool_calls: null` on text-only turns caused a 400 (fixed in agent.py); observations trimmed to 2500 chars for the token limit.
+- Not verified: no gold labels, so priorities (e.g. TCK-9003/9005 as P1) are judged by reading only. Runs take 15-70s per ticket due to rate limits.
+
 ## Limitations
-- Not yet run against real Grok output or the real starter data; the offline policy is rule-based, so its accuracy says little about LLM quality.
+- Not yet run on the real starter data; tests use the offline mock, which says little about LLM quality.
 - Lexical retrieval only; no embeddings. Account matching is heuristic. Priority/escalation rules live in prompt + KB, not a tested rules engine. No auth on the UI; no retries/rate-limit handling for Grok free-trial limits.
 
 ## How to run
