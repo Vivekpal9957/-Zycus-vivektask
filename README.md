@@ -50,6 +50,6 @@ Pick a ticket, hit **Triage**, and watch the agent work: each tool call, its rea
 ```
 tam_agent/  agent.py (loop) · tools.py (tools + BM25) · llm.py · schema.py · data.py · kb.py
 ui/         server.py (SSE, stdlib) · index.html
-scripts/    validate_data.py · check_outputs.py · gen_data.py
+scripts/    validate_data.py · check_outputs.py
 SOLUTION.md design · evaluation plan · scale · limitations
 ```

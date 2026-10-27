@@ -1,37 +1,37 @@
 {
-  "account_id": "ACC-4516",
   "account_confidence": 0.95,
-  "category": "Integration",
-  "priority": "P2",
-  "routing": "L2_support",
+  "account_id": "ACC-4516",
+  "category": "Performance",
+  "clarification_questions": [],
+  "customer_reply": "Hi,\n\nThank you for reaching out. We\u2019ve identified that this issue is a duplicate of ticket **TKT\u201110228** which is already open and being investigated.\n\nIn the meantime, please follow these steps:\n1. **Check the status page** at `status.yourplatform.com` for any ongoing incidents that might affect SecureVault.\n2. If the status page shows no incidents, identify whether the slowness is on the UI or API:\n   * **UI slow** \u2013 likely a client\u2011side network issue or a platform\u2011wide incident.\n   * **API slow** \u2013 check the `X\u2011Processing\u2011Time` header; if it\u2019s >\u202f2000\u202fms, note the request ID.\n3. If the issue persists after the status page clears, open a new support ticket with the request ID and any relevant logs.\n\nWe\u2019ll keep you updated on the progress of TKT\u201110228. If you have any additional information or logs, feel free to attach them.\n\nBest regards,\nDmitri Volkov\nL1 Support Team",
+  "duplicate_of": "TKT-10228",
   "escalate": false,
   "escalation_reason": null,
-  "notify_tam": false,
+  "internal_note": "Account Belbury Group (ACC-4516) healthy, 89 days to renewal, no recent P1s. Ticket is duplicate of TKT-10228. Performance issue; KB article performance-and-integrations#2 used. No escalation needed.",
   "is_duplicate": true,
-  "duplicate_of": "TKT-10228",
-  "needs_clarification": false,
-  "clarification_questions": [],
   "kb_articles": [
-    "analyticshub#2"
+    "performance-and-integrations#2"
   ],
-  "customer_reply": "Hello,\n\nThanks for contacting us. This looks related to your open ticket TKT-10228; we have linked them. Based on our documentation: ## Common Support Scenarios\n\n### Dashboard loads slowly or times out\n\n1. Open the Query Profiler: Dashboard \u2192 [widget] \u2192 Edit \u2192 Profiler.\n2. Look for full-table scans or missing indexes on the source database.\n3. Add date range filters to l We'll follow up with next steps.",
-  "internal_note": "Belbury Group (ACC-4516, Business, Healthy); renewal in 89d; seats 63% active. Duplicate of TKT-10228. KB used: analyticshub#2. ",
+  "needs_clarification": false,
+  "notify_tam": false,
+  "priority": "P2",
+  "routing": "L1_support",
   "ticket_id": "TKT-10035",
   "reasoning_trace": [
     {
       "step": 1,
       "tool": "resolve_account",
-      "thought": "Resolving the account by company name, since the ticket account_id may be unknown.",
+      "thought": "(no commentary)",
       "args": {
-        "company": "Belbury Group",
-        "account_id": "ACC-7240"
+        "account_id": "ACC-7240",
+        "company": "Belbury Group"
       },
       "observation": "ACC-4516 Belbury Group (0.95)"
     },
     {
       "step": 2,
       "tool": "get_account_context",
-      "thought": "Checking health, renewal and churn signals for ACC-4516.",
+      "thought": "(no commentary)",
       "args": {
         "account_id": "ACC-4516"
       },
@@ -40,36 +40,72 @@
     {
       "step": 3,
       "tool": "search_tickets",
-      "thought": "Looking for duplicates and history on this account.",
+      "thought": "(no commentary)",
       "args": {
         "account_id": "ACC-4516",
-        "query": "SecureVault running extremely slowly for our team Hi Support,\n\nWe've noticed significant performance degradation in SecureVault over the past 2 days. Page loads are taking 116+ seconds and Key Managem",
-        "exclude_ticket_id": "TKT-10035"
+        "exclude_ticket_id": "TKT-10035",
+        "query": "SecureVault performance degradation"
       },
-      "observation": "TKT-10228(In Progress) SecureVault running extremely slowly for our team; TKT-10252(Open) URGENT: Missing data in SecureVault Key Management; TKT-10016(Closed) Feature request: export Key Management data to Jir"
+      "observation": "TKT-10228(In Progress) SecureVault running extremely slowly for our team; TKT-10360(In Progress) Webhook from SecureVault not reaching Zendesk; TKT-10252(Open) URGENT: Missing data in SecureVault Key Management"
     },
     {
       "step": 4,
       "tool": "search_kb",
-      "thought": "Searching the knowledge base.",
+      "thought": "(no commentary)",
       "args": {
-        "query": "SecureVault running extremely slowly for our team Hi Support,\n\nWe've noticed significant performance degradation in SecureVault over the past 2 days. Page loads are taking 116+ seconds and Key Management operations are timing out.\n\nAffected users: 36"
+        "query": "SecureVault performance degradation page loads 116 seconds key management timeout"
       },
-      "observation": "analyticshub#2 uct Reference - Common Support Scenarios; securevault#2 uct Reference - Common Support Scenarios; securevault#0 cureVault \u2014 Product Reference - Overview; securevault#1 Vault \u2014 Product Reference - Core Modules"
+      "observation": "securevault#0 cureVault \u2014 Product Reference - Overview; performance-and-integrations#4 dge Pro: Pipeline Throughput Degradation; performance-and-integrations#0 eshooting: Performance Issues - overview; securevault#2 uct Reference - Common Support Scenarios"
     },
     {
       "step": 5,
       "tool": "get_kb_article",
-      "thought": "Reading analyticshub#2 in full.",
+      "thought": "(no commentary)",
       "args": {
-        "article_id": "analyticshub#2"
+        "article_id": "performance-and-integrations#0"
       },
-      "observation": "analyticshub#2 AnalyticsHub \u2014 Product Reference - Common Support Scenarios"
+      "observation": "performance-and-integrations#0 Troubleshooting: Performance Issues - overview"
     },
     {
       "step": 6,
+      "tool": "search_kb",
+      "thought": "(no commentary)",
+      "args": {
+        "query": "SecureVault performance degradation page loads 116 seconds key management timeout securevault performance"
+      },
+      "observation": "securevault#0 cureVault \u2014 Product Reference - Overview; performance-and-integrations#4 dge Pro: Pipeline Throughput Degradation; performance-and-integrations#0 eshooting: Performance Issues - overview; securevault#2 uct Reference - Common Support Scenarios"
+    },
+    {
+      "step": 7,
+      "tool": "search_kb",
+      "thought": "(no commentary)",
+      "args": {
+        "query": "SecureVault performance"
+      },
+      "observation": "securevault#0 cureVault \u2014 Product Reference - Overview; authentication-sso#1 : Authentication & SSO - Error Reference; securevault#1 Vault \u2014 Product Reference - Core Modules; securevault#2 uct Reference - Common Support Scenarios"
+    },
+    {
+      "step": 8,
+      "tool": "search_kb",
+      "thought": "(no commentary)",
+      "args": {
+        "query": "\"SecureVault\" \"performance\" \"issue\""
+      },
+      "observation": "performance-and-integrations#2 nce Issues - Diagnosing Slow Performance; securevault#0 cureVault \u2014 Product Reference - Overview; authentication-sso#1 : Authentication & SSO - Error Reference; securevault#1 Vault \u2014 Product Reference - Core Modules"
+    },
+    {
+      "step": 9,
+      "tool": "get_kb_article",
+      "thought": "(no commentary)",
+      "args": {
+        "article_id": "performance-and-integrations#2"
+      },
+      "observation": "performance-and-integrations#2 Troubleshooting: Performance Issues - Diagnosing Slow Performance"
+    },
+    {
+      "step": 10,
       "tool": "submit_triage",
-      "thought": "Enough evidence; submitting.",
+      "thought": "Decision made.",
       "args": {},
       "observation": "submitted"
     }
