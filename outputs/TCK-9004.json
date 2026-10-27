@@ -3,11 +3,11 @@
   "account_id": "ACC-0001",
   "category": "renewal_risk",
   "clarification_questions": [],
-  "customer_reply": "Hi,\n\nThank you for reaching out. I understand your concerns about the upcoming renewal and the recent challenges your team has faced. I\u2019m escalating this case as a renewal\u2011risk situation and have notified your Technical Account Manager. One of our senior team members will contact you within the next business day to discuss your contract and explore options that best fit your needs.\n\nWe appreciate your partnership and are committed to addressing the open tickets and ensuring a smooth experience moving forward.\n\nBest regards,\nSupport Team",
+  "customer_reply": "Hi,\n\nThank you for reaching out. I understand your concerns about the recent migration experience and the upcoming renewal. I\u2019ve escalated this case as a renewal\u2011risk situation and have notified your Technical Account Manager. One of our senior team members will contact you within the next business day to discuss your contract and explore how we can best support your team moving forward.\n\nWe appreciate your partnership and are committed to addressing the outstanding tickets and improving your experience.\n\nBest regards,\n[Your Name]\nCustomer Success Team",
   "duplicate_of": null,
   "escalate": true,
-  "escalation_reason": "Renewal risk \u2013 renewal in 28 days, significant usage decline, open escalation (ESC-101), multiple unresolved tickets, negative sentiment.",
-  "internal_note": "Account ACC-0001 (Northwind Traders Inc) identified with high confidence. Enterprise tier, renewal on 2026-11-24 (28 days). Usage dropped 65.8% QoQ and 90% YoY. Open escalation ESC-101 (migration data loss) and 4 open tickets, including 3 unresolved. Customer expresses intent to evaluate other vendors. Per KB-POL-002 (Priority matrix) and KB-POL-003 (Escalation policy), this qualifies as a P2 renewal\u2011risk escalation. TAM should be notified per KB-POL-004. Routing to Customer Success for renewal handling. No duplicate found.",
+  "escalation_reason": "Renewal risk: renewal in 28 days, 65% usage decline, open escalation on migration data loss, multiple unresolved tickets.",
+  "internal_note": "Account ACC-0001 (Northwind Traders Inc) is Enterprise tier, renewal on 2026-11-24 (28 days). Usage dropped 65.8% last 3 months, 90% YoY decline. Open escalation ESC-101 (migration data loss) and 4 open tickets, 3 unresolved. This is a renewal\u2011risk scenario per KB-POL-003; priority P2 per KB-POL-002. Notify TAM per KB-POL-004. Route to customer_success for senior engagement. No duplicate found.",
   "is_duplicate": false,
   "kb_articles": [
     "KB-POL-002",
@@ -40,26 +40,6 @@
     },
     {
       "step": 3,
-      "tool": "search_tickets",
-      "thought": "(no commentary)",
-      "args": {
-        "account_id": "ACC-0001",
-        "exclude_ticket_id": "TCK-9004",
-        "query": "contract renewal churn"
-      },
-      "observation": "none"
-    },
-    {
-      "step": 4,
-      "tool": "search_kb",
-      "thought": "(no commentary)",
-      "args": {
-        "query": "renewal risk routing tier enterprise"
-      },
-      "observation": "KB-POL-003 Escalation policy; KB-POL-002 Priority and SLA matrix; KB-POL-004 TAM notification policy; KB-0014 Invoice approval workflow (LATAM)"
-    },
-    {
-      "step": 5,
       "tool": "submit_triage",
       "thought": "Decision made.",
       "args": {},

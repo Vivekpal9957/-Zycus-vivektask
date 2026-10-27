@@ -3,11 +3,11 @@
   "account_id": "ACC-0008",
   "category": "security",
   "clarification_questions": [],
-  "customer_reply": "Hi,\n\nWe\u2019ve received your report that a former contractor still has access and was able to export supplier bank details. This is being treated as a security incident. Our Security Team has been alerted and will work with you to contain the issue, preserve evidence, and rotate any compromised credentials. In the meantime, please disable the user\u2019s account immediately and revoke any API keys or tokens associated with that account.\n\nWe\u2019ll keep you updated on the next steps.\n\nBest regards,\nSupport Team",
+  "customer_reply": "Hi,\n\nWe\u2019ve escalated this incident to our Security Team as a high\u2011severity (P1) case. They will preserve all relevant logs, immediately disable the former contractor\u2019s account, and rotate any credentials that may have been exposed. Please retain any evidence you have (e.g., screenshots, export files) and avoid deleting logs or user data until we confirm the next steps.\n\nOur Security Team will reach out within the next hour with further instructions. We\u2019ll also keep your Customer Success Manager, Priya Nair, informed.\n\nThank you for reporting this promptly.\n\nBest regards,\nSupport Team",
   "duplicate_of": null,
   "escalate": true,
-  "escalation_reason": "Suspected unauthorized access and potential data breach involving supplier bank details.",
-  "internal_note": "Account ACC-0008 (Hooli Systems) confirmed with 0.99 confidence. Premier tier, renewal in 75 days, usage down 56% YoY but no open escalations. No duplicate tickets found. Security incident per KB-POL-006 (P1). Routing to Security Team, TAM notified. Priority set to P1.",
+  "escalation_reason": "Suspected unauthorized access and potential data breach of supplier bank details (P1 security incident).",
+  "internal_note": "Account ACC-0008 (Hooli Systems) confirmed with 0.99 confidence. Premier tier, renewal in 75 days, usage down 56% YoY but no impact on security. One open ticket, no current escalations. This ticket reports a former employee still able to log in and export supplier bank details, indicating a possible data breach. Per KB-POL-006, this is a P1 security incident requiring immediate escalation to Security Team and TAM notification. No duplicate tickets found. Routing to security_team, priority P1, notify TAM Priya Nair.",
   "is_duplicate": false,
   "kb_articles": [
     "KB-POL-006"
@@ -42,7 +42,7 @@
       "tool": "search_kb",
       "thought": "(no commentary)",
       "args": {
-        "query": "former employee access security incident data breach policy"
+        "query": "former employee access data breach supplier bank details security incident policy"
       },
       "observation": "KB-POL-006 Security incident handling; KB-0302 User access and audit logs (LATAM); KB-0300 User access and audit logs (APAC); KB-0299 User access and audit logs (EMEA)"
     },

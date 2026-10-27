@@ -1,21 +1,21 @@
 {
   "account_confidence": 0.99,
   "account_id": "ACC-0004",
-  "category": "technical_issue",
+  "category": "how_to",
   "clarification_questions": [],
-  "customer_reply": "Hi Priya,\n\nThank you for reaching out. To resolve the delegation issue for invoice approvals, please follow these steps:\n\n1. Log in to the Admin console and navigate to **Admin\u202f>\u202fWorkflow\u202f>\u202fApprovals**.\n2. Locate the **Approval Chain** for the affected AP approver.\n3. Verify that the delegate you added is listed correctly and that the **Effective Date** is set to today or earlier.\n4. If the delegate appears correctly, click **Re\u2011queue Pending Invoices** to push the 40 invoices back into the workflow.\n5. Ask the delegate to refresh their browser (or clear cache) and approve the invoices.\n6. After the invoices are processed, return to the Approval Chain screen and confirm that the delegate entry is still present. If it disappears, repeat steps 2\u20114 and then contact us.\n\nIf the delegate still does not appear or the invoices remain stuck after re\u2011queuing, please let us know and we\u2019ll investigate further.\n\nBest regards,\nSupport Team",
+  "customer_reply": "Hi Priya,\n\nThank you for reaching out. To get your delegate working for invoice approvals, please follow these steps:\n\n1. **Verify the delegate settings**\n   - Go to **Profile\u202f>\u202fDelegation**.\n   - Confirm that the delegate\u2019s **Start Date** and **End Date** include today\u2019s date.\n   - Ensure the delegate\u2019s role includes the **Approver** permission (Settings\u202f>\u202fRoles).\n2. **Check pending approvals**\n   - In the **Invoices** view, select the pending invoices and use **Reassign** to move them to the delegate. This will immediately shift the queue.\n3. **Save and refresh**\n   - After updating the delegation, click **Save** and refresh the page. The invoices should now show the delegate\u2019s name.\n4. **If the issue persists**\n   - Clear your browser cache or try an incognito window.\n   - Verify that there are no overlapping delegation periods (e.g., a previous delegate still active).\n\nFor detailed guidance specific to the APAC region, see our knowledge\u2011base article **KB\u20110282 \u2013 Approval delegation (APAC)**.\n\nIf you still see the original approver listed after these steps, please let us know and we\u2019ll investigate further.\n\nBest regards,\nSupport Team",
   "duplicate_of": null,
   "escalate": false,
   "escalation_reason": null,
-  "internal_note": "Account ACC-0004 (Globex Logistics, Premier) identified with 0.99 confidence. Issue: invoice approval delegation not working, 40 invoices pending. No open escalations, 3 open tickets (none duplicate). Relevant KB: KB-0012 (Invoice approval workflow \u2013 APAC). Suggested steps: verify delegation in Admin > Workflow > Approvals, re\u2011queue pending invoices, ensure delegate effective date. Priority set to P3 (moderate impact). Routing to L2_support for workflow configuration expertise.",
+  "internal_note": "Account resolved to ACC-0004 (Globex Logistics, Premier, APAC) with 0.99 confidence. Issue: delegate for invoice approvals not taking effect; 40 invoices pending. No open escalations. Similar closed ticket TCK-3513 (approval delegation) found but resolved; not a duplicate. Relevant KB article KB-0282 (current) covers delegation setup for APAC. Recommended steps: verify delegation dates, role permissions, reassign pending invoices, clear cache. No escalation needed. Priority set to P3 (moderate impact). Routing to L1_support.",
   "is_duplicate": false,
   "kb_articles": [
-    "KB-0012"
+    "KB-0282"
   ],
   "needs_clarification": false,
   "notify_tam": false,
   "priority": "P3",
-  "routing": "L2_support",
+  "routing": "L1_support",
   "ticket_id": "TCK-9001",
   "reasoning_trace": [
     {
@@ -53,12 +53,21 @@
       "tool": "search_kb",
       "thought": "(no commentary)",
       "args": {
-        "query": "invoice approval delegation not working pending approval"
+        "query": "invoice approval delegation not working"
       },
-      "observation": "KB-0014 Invoice approval workflow (LATAM); KB-0012 Invoice approval workflow (APAC); KB-0011 Invoice approval workflow (EMEA); KB-0007 Invoice approval workflow (Okta)"
+      "observation": "KB-0284 Approval delegation (LATAM); KB-0282 Approval delegation (APAC); KB-0281 Approval delegation (EMEA); KB-0277 Approval delegation (Okta)"
     },
     {
       "step": 5,
+      "tool": "get_ticket",
+      "thought": "(no commentary)",
+      "args": {
+        "ticket_id": "TCK-3513"
+      },
+      "observation": "TCK-3513 closed: Approval delegation problem \u2013 Cloud v9"
+    },
+    {
+      "step": 6,
       "tool": "submit_triage",
       "thought": "Decision made.",
       "args": {},

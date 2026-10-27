@@ -3,18 +3,18 @@
   "account_id": "ACC-0005",
   "category": "integration",
   "clarification_questions": [],
-  "customer_reply": "Hi,\n\nWe see that you have an existing open ticket (TCK-8801) regarding the same SAP PO export error\u202f4021. Our team is already investigating this issue and will keep you updated on progress. If you have any new information or additional symptoms, please let us know.\n\nThank you for your patience.\n\nBest regards,\nSupport Team",
+  "customer_reply": "Hi,\n\nWe see that this issue is already tracked under ticket TCK-8801, which is currently being investigated by our integration team. Our engineers are working to resolve the SAP PO export error\u202f4021 as quickly as possible. We will keep you updated through that ticket.\n\nIf you have any new information (e.g., additional error details or recent changes in SAP), please let us know.\n\nThank you for your patience.\n\nBest regards,\nSupport Team",
   "duplicate_of": "TCK-8801",
   "escalate": false,
   "escalation_reason": null,
-  "internal_note": "Account ACC-0005 (Initech Manufacturing) confirmed with 0.99 confidence. Enterprise tier, renewal in 300 days, stable usage. Open escalation ESC-102 already tracking ERP export failures. Ticket TCK-9003 is a duplicate of open ticket TCK-8801 (same error 4021, same requester). No further action needed beyond linking as duplicate; keep under existing escalation. Notify TAM for visibility.",
+  "internal_note": "Ticket TCK-9003 is a duplicate of open ticket TCK-8801 (same account ACC-0005, same SAP PO export error 4021). Account is Enterprise tier, renewal in 300 days, usage stable. Open escalation ESC-102 already covers ERP export failures blocking month\u2011end. No further action needed beyond linking duplicate; TAM notified. KB-S04 referenced for known cause (vendor master missing payment term).",
   "is_duplicate": true,
   "kb_articles": [
     "KB-S04"
   ],
   "needs_clarification": false,
   "notify_tam": true,
-  "priority": "P2",
+  "priority": "P1",
   "routing": "L2_support",
   "ticket_id": "TCK-9003",
   "reasoning_trace": [
